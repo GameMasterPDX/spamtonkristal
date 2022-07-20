@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="32" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="49">
+ <editorsettings>
+  <export target="spamtonalley.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="spamton_meeting"/>
+  <property name="name" value="Spamton alleyway"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/city.tsx"/>
+ <layer id="2" name="Tile" width="32" height="12">
+  <data encoding="csv">
+1031,1031,1032,987,987,1030,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1032,577,577,703,704,648,678,724,
+1031,1031,1032,987,987,1030,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1032,540,540,724,725,703,704,705,
+1031,1031,1032,987,987,1012,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,540,540,678,678,724,725,703,
+1031,1031,1032,987,987,1012,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1051,1013,540,540,709,710,711,678,724,
+1031,1031,1032,987,987,1033,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1052,1034,540,540,730,731,732,678,678,
+1031,1031,1032,987,987,934,940,1075,940,941,940,941,940,941,940,941,940,941,940,941,940,1075,940,941,935,987,987,1009,1010,1010,1010,1010,
+1031,1031,1032,987,987,1005,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1006,987,987,1030,1031,1031,1031,1031,
+1010,1010,1011,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,987,1030,1031,1031,1031,1031,
+1031,1031,1032,1009,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1010,1011,1030,1031,1031,1031,1031,
+1031,1031,1032,1030,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1032,1009,1010,1010,1010,1010,
+1031,1031,1032,1030,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1032,1030,1031,1031,1031,1031,
+1031,1031,1032,1030,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1031,1032,1030,1031,1031,1031,1031
+</data>
+ </layer>
+ <layer id="3" name="Ov" width="32" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,1018,1019,1020,0,1018,1019,1020,0,0,0,0,0,853,0,1021,1022,1023,0,854,0,0,0,0,0,0,0,
+0,0,0,0,0,852,1039,1040,1041,0,1039,1040,1041,0,0,0,0,0,0,0,1042,1043,1044,0,0,0,0,0,0,0,0,0,
+0,0,0,0,832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,833,0,0,0,0,0,
+0,0,0,0,0,0,0,832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,832,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="4" name="collision">
+  <object id="15" x="120" y="320" width="960" height="40"/>
+  <object id="17" x="80" y="0" width="40" height="320"/>
+  <object id="19" x="1080" y="0" width="40" height="320"/>
+  <object id="20" x="960" y="0" width="40" height="200"/>
+  <object id="22" x="200" y="160" width="760" height="40"/>
+  <object id="23" x="200" y="0" width="40" height="160"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="6" name="objects">
+  <object id="16" name="savepoint" x="280" y="240" width="40" height="40">
+   <properties>
+    <property name="text1">* The old, musty air of the
+alleyway fills you with glee.</property>
+   </properties>
+  </object>
+  <object id="27" name="enemy" x="1000" y="160" width="40" height="40">
+   <properties>
+    <property name="actor" value="dummy"/>
+    <property name="encounter" value="dummy"/>
+   </properties>
+  </object>
+  <object id="30" name="transition" x="120" y="-40" width="80" height="40">
+   <properties>
+    <property name="map" value="traffic"/>
+    <property name="marker" value="entry_left"/>
+   </properties>
+  </object>
+  <object id="31" name="npc" x="660" y="240">
+   <properties>
+    <property name="actor" value="dumpster"/>
+    <property name="script" value="spamtonalley.dumpster"/>
+    <property name="sprite" value="open"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="script" x="200" y="240" width="80" height="58">
+   <properties>
+    <property name="script" value="spamtonalley.start"/>
+   </properties>
+  </object>
+  <object id="41" name="readable" x="240" y="160" width="120" height="40">
+   <properties>
+    <property name="text1">[voice:spamton]* [[Buy Queen Clean!]] TO CLEAN
+MY [[$!#$]]!</property>
+   </properties>
+  </object>
+  <object id="42" name="readable" x="400" y="160" width="120" height="40">
+   <properties>
+    <property name="text1" value="[voice:spamton]* DELICIS!"/>
+   </properties>
+  </object>
+  <object id="43" name="readable" x="800" y="160" width="120" height="40">
+   <properties>
+    <property name="text1">[voice:spamton]* THE [[Facing your fears]] OF
+PERFECTION!</property>
+   </properties>
+  </object>
+  <object id="44" name="transition" x="1000" y="-40" width="80" height="40">
+   <properties>
+    <property name="map" value="traffic"/>
+    <property name="marker" value="entry_right"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff0000" id="7" name="paths"/>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="13" name="spawn" x="240" y="280">
+   <point/>
+  </object>
+  <object id="46" name="entry_left" x="160" y="40">
+   <point/>
+  </object>
+  <object id="47" name="entry_right" x="1040" y="40">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
