@@ -96,10 +96,9 @@ function actor:init()
         ["battle/intro"] = {0, 0},
         ["battle/victory"] = {0, 0},
 		
-		["battle/grow"] = {-18, -31},
-		["battle/big"] = {-18, -31},
-		["battle/shrink"] = {-18, -31},
-		["battle/shrink2"] = {-18, -31},
+	["battle/grow"] = {-17, -31},
+	["battle/big"] = {-17, -31},
+	["battle/shrink"] = {-17, -31},
 
         -- Cutscene offsets
         ["pose"] = {-4, -2},
