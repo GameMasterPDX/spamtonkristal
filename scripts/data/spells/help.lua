@@ -9,15 +9,15 @@ function spell:init()
     self.cast_name = nil
 
     -- Battle description
-    self.effect = "Heal\nAlly...?"
+    self.effect = "Heal\nParty...?"
     -- Menu description
-    self.description = "[Press F1 For] HELP!\n[[Magic]] DEPEND."
+    self.description = "[Volatile] HEALING,[3 For One Specil!]\n[[Magic]] DEPEND."
 
     -- TP cost
     self.cost = 32
 
     -- Target mode (ally, party, enemy, enemies, or none)
-    self.target = "ally"
+    self.target = "party"
 
     -- Tags that apply to this spell
     self.tags = {"heal"}
@@ -35,7 +35,8 @@ function spell:onStart(user, target)
 end
 
 function spell:onCast(user, target)
-    target:heal((user.chara:getStat("magic")+4) * 5)
+    for _,battler in ipairs(target) do
+        battler:heal(math.random(1,user.chara:getStat("magic") * 5.5))
+    end
 end
-
 return spell
