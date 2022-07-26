@@ -112,7 +112,7 @@ end
 
 function character:drawPowerStat(index, x, y, menu)
 	if index==1 then
-		local icon = Assets.getTexture("ui/menu/icon/fire")
+		local icon = Assets.getTexture("ui/menu/icon/kromer")
 		love.graphics.draw(icon, x-26, y+6, 0, 2, 2)
 		love.graphics.print("KROMER:", x, y)
 		love.graphics.print(menu.kromer_count, x+130, y)
