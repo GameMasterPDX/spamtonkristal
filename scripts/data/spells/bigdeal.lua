@@ -1,4 +1,4 @@
-local spell, super = Class(Spell, "kromer")
+local spell, super = Class(Spell, "bigdeal")
 
 function spell:init()
     super:init(self)
