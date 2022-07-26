@@ -34,7 +34,7 @@ function character:init()
     self.xact_name = "SP-Action"
 	
 	self:addSpell("help")
-	self:addSpell("kromer")
+	self:addSpell("bigdeal")
 
     -- Current health (saved to the save file)
 	self.health=150
@@ -100,7 +100,7 @@ function character:onLevelUp(level)
     -- TODO: Maybe allow chapter 1 levelups?
     if Game.chapter == 1 then return end
 
-    self:increaseStat("health", 2, 160)
+    self:increaseStat("health", 2, 197)
     if level % 10 == 0 then
         self:increaseStat("attack", 1)
     end
