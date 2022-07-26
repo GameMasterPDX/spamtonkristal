@@ -9,9 +9,9 @@ function spell:init()
     self.cast_name = nil
 
     -- Battle description
-    self.effect = "Heal\nParty...?"
+    self.effect = "Heal All\nRandom HP"
     -- Menu description
-    self.description = "[Volatile] HEALING,[3 For One Specil!]\n[[Magic]] DEPEND."
+    self.description = "Restores HP to all party members. \nExtremely volatile,depends on Magic."
 
     -- TP cost
     self.cost = 32
