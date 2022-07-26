@@ -11,7 +11,7 @@ function spell:init()
     -- Battle description
     self.effect = "Drain\n enemy."
     -- Menu description
-    self.description = "Steal KROMER from\nthe enemy."
+    self.description = "Steal KROMER from the enemy.\nRandom damage, depends on Attack and Magic."
 
     -- TP cost
     self.cost = 25
@@ -73,8 +73,8 @@ function spell:onCast(user, target)
 	Game.battle:addChild(spam)
     Game.battle.timer:script(function(wait)
 		wait(1/2)
-        for i=0,user.chara:getStat("magic")-5 do
-			local damage = (user.chara:getStat("magic")+user.chara:getStat("attack"))*math.ceil((user.chara:getStat("magic")+user.chara:getStat("attack"))/20)+math.random(-5,10)
+        for i=0,math.floor(user.chara:getStat("magic")/2) do
+			local damage = math.ceil((user.chara:getStat("magic")+user.chara:getStat("attack"))/2)+math.random(0,10)
 			if(#Game.battle.enemies==0)then
 				break
 			end
