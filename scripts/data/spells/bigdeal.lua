@@ -35,6 +35,7 @@ end
 
 function spell:onCast(user, target)
 	--user:setAnimation("battle/grow")
+	user.chara.strings=math.min(user.chara.strings+1,100)
 	local spam = ParticleAbsorber(user.x,user.y-60,{
 		amount = 2,
 		layer = "below_bullets",
