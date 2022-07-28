@@ -6,6 +6,9 @@ function character:init()
     -- Display name
     self.name = "Spamton"
 
+	
+	self.strings=38
+	self.isbig=false
     -- Actor (handles overworld/battle sprites)
     self:setActor("spamton")
     self:setLightActor("spamton")
@@ -20,7 +23,7 @@ function character:init()
     end
 
     -- Determines which character the soul comes from (higher number = higher priority)
-    self.soul_priority = 2
+    self.soul_priority = 1
     -- The color of this character's soul (optional, defaults to red)
     self.soul_color = {1, 0, 0}
 
@@ -117,8 +120,24 @@ function character:drawPowerStat(index, x, y, menu)
 		love.graphics.print("KROMER:", x, y)
 		love.graphics.print(menu.kromer_count, x+130, y)
 		return true
-	--elseif index==2 then
+	elseif index==2 then
+		local icon = Assets.getTexture("ui/menu/icon/strings")
+		love.graphics.draw(icon, x-26, y+6, 0, 2, 2)
+		love.graphics.print("Strings:", x, y)
+		if not(self.isbig)then
+			love.graphics.print(self.strings, x+130, y)
+		else
+			love.graphics.print(0, x+130, y)
+		end
+		return true
+	elseif index==3 then
+		love.graphics.print("[[BIG]]:", x, y)
+		if(self.isbig)then
+			love.graphics.print("Yes", x+130, y)
+		else
+			love.graphics.print("No", x+130, y)
+		end
+		return true
 	end
 end
-
 return character
